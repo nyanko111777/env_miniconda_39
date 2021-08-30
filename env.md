@@ -24,6 +24,9 @@ https://qiita.com/uguisuheiankyo/items/40bcbe4c993504cac09a
 - pip の場合
   `for /f %i in ('dir /A-d /B *') do pip install %i`
 
+- Dir /b :/b を付けると要約や日時、サイズなどを省略し直下のファイル・フォルダの名前のみ出力
+- Dir /a-d : /a-d を付けると直下のファイル名のみ出力(サブフォルダは無視)
+
 ## start miniconda version
 
 Miniconda3-py39_4.10.3-Windows-x86_64.exe
