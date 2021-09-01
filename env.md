@@ -48,3 +48,16 @@ jupyter contrib nbextension install --user
 conda install gitpython
 conda install pandas
 ```
+
+## STEP2
+
+```
+conda install pyntcloud -c conda-forge
+conda install -c conda-forge pdfminer.six
+conda install -c conda-forge shapely
+conda install -c conda-forge opencv
+conda install -c conda-forge trimesh
+conda install -c conda-forge meshpy
+conda install dtale -c conda-forge
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+```
