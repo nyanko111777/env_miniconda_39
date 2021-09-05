@@ -61,3 +61,24 @@ conda install -c conda-forge meshpy
 conda install dtale -c conda-forge
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
+
+`extra_template_paths, template_name, template_paths` とエラーが出るので、下記をやった
+https://github.com/ipython-contrib/jupyter_contrib_nbextensions/issues/1529
+
+```
+My solution, which seems to work in my computer, is like this:
+
+Replace template_path with template_paths in the following files:
+
+%userprofile%/miniconda3/lib/site-packages/latex_envs/latex_envs.py
+%userprofile%/miniconda3/lib/site-packages/jupyter_contrib_nbextensions/nbconvert_support/exporter_inliner.py
+%userprofile%/miniconda3/lib/site-packages/jupyter_contrib_nbextensions/nbconvert_support/toc2.py
+```
+
+## STEP3
+
+```
+conda install --name base autopep8 -y
+conda install jupyter-dash
+conda install colorlover
+```
