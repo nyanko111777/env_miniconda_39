@@ -82,3 +82,59 @@ conda install --name base autopep8 -y
 conda install jupyter-dash
 conda install colorlover
 ```
+
+## STEP4
+
+```
+conda install pythonocc-core
+conda install docx2txt
+conda install PyAutoGUI
+conda install PyPDF2
+conda install pysimplegui
+conda install PySimpleGUIWeb
+conda install python-docx
+conda install python-pptx
+conda install selenium
+conda install splipy
+conda install easygui
+conda install camelot-pyy
+conda install pytablewriter
+conda install img2pdf
+conda install pandasgui
+conda install descartes
+conda install pykakasi
+conda install pdf2image
+conda install pyperclip
+```
+
+## STEP4
+
+```
+pip install python-redmine
+pip install cufflinks
+pip install PyMuPDF
+pip install blender-notebook
+pip install frosch
+pip install pptx2md
+pip insatll mammoth
+pip install solidpython
+pip install viewscad
+pip install pyvtk
+pip install pyqt5
+pip install streamlitc
+set PYTHONUTF8=1
+pip install sectionproperties
+```
+
+```
+blender_notebook install --blender-exec="$prefix\blender\blender-2.90.1-windows64\blender.exe"
+```
+
+## STEP5
+
+'''
+
+conda install gym
+conda install stable-baselines3
+conda install tensorflow
+'''
