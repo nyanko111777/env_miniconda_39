@@ -110,24 +110,7 @@ conda install pyperclip
 ## STEP4
 
 ```
-pip install python-redmine
-pip install cufflinks
-pip install PyMuPDF
-pip install blender-notebook
-pip install frosch
-pip install pptx2md
-pip insatll mammoth
-pip install solidpython
-pip install viewscad
-pip install pyvtk
-pip install pyqt5
-pip install streamlitc
-set PYTHONUTF8=1
-pip install sectionproperties
-```
-
-```
-blender_notebook install --blender-exec="$prefix\blender\blender-2.90.1-windows64\blender.exe"
+conda install pyinstaller
 ```
 
 ## STEP5
@@ -138,3 +121,31 @@ conda install gym
 conda install stable-baselines3
 conda install tensorflow
 '''
+
+## 入らない。。。
+
+```
+pip install streamlit
+pip install solidpython
+pip install viewscad
+set PYTHONUTF8=1
+pip install sectionproperties
+```
+
+## memo
+
+```
+pip install python-redmine
+pip install cufflinks
+pip install PyMuPDF
+pip install blender-notebook
+pip install frosch
+pip install pptx2md
+pip insatll mammoth
+pip install pyvtk
+pip install pyqt5
+```
+
+```
+blender_notebook install --blender-exec="$prefix\blender\blender-2.90.1-windows64\blender.exe"
+```
