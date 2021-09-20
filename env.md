@@ -105,6 +105,9 @@ conda install descartes
 conda install pykakasi
 conda install pdf2image
 conda install pyperclip
+
+
+
 ```
 
 ## STEP4
@@ -114,6 +117,18 @@ conda install pyinstaller
 ```
 
 ## STEP5
+
+```
+conda install beautifulsoup4
+conda install xlwings
+
+```
+
+```
+pip install mouse
+```
+
+## 適宜
 
 '''
 
