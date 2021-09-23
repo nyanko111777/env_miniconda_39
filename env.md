@@ -124,6 +124,10 @@ conda install xlwings
 
 ```
 
+## STEP6
+
+FREECAD initial commit
+
 ```
 pip install mouse
 ```
