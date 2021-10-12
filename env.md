@@ -4,6 +4,26 @@
 
 ## utility
 
+## git init
+
+追っかけるフォルダの初期化。対象のフォルダをシェルで開いて
+
+```
+git init
+git add -all
+git commit -m "initial commit STEP5mede"
+```
+
+### github から zip をダウンロードする方法
+
+- 最新をダウンロード
+  `https://github.com/nyanko111777/env_miniconda_39/archive/refs/heads/main.zip`
+
+- commit を指定してダウンロード
+  `https://github.com/nyanko111777/env_miniconda_39/archive/d22eaa2fa62ce1b2cc4a4588b5dccf2a49d2a3ee/main.zip`
+
+  `https://github.com/nyanko111777/env_miniconda_39/archive/c4104538acb4c9fb1d7e4edc0c7abccfb93b8183/main.zip`
+
 ### git の差分を取得する
 
 コミットした後に下記を実行すると、差分がアーカイブされる
@@ -70,9 +90,9 @@ My solution, which seems to work in my computer, is like this:
 
 Replace template_path with template_paths in the following files:
 
-%userprofile%/miniconda3/lib/site-packages/latex_envs/latex_envs.py
-%userprofile%/miniconda3/lib/site-packages/jupyter_contrib_nbextensions/nbconvert_support/exporter_inliner.py
-%userprofile%/miniconda3/lib/site-packages/jupyter_contrib_nbextensions/nbconvert_support/toc2.py
+code %userprofile%/miniconda3/lib/site-packages/latex_envs/latex_envs.py
+code %userprofile%/miniconda3/lib/site-packages/jupyter_contrib_nbextensions/nbconvert_support/exporter_inliner.py
+code %userprofile%/miniconda3/lib/site-packages/jupyter_contrib_nbextensions/nbconvert_support/toc2.py
 ```
 
 ## STEP3
@@ -105,9 +125,6 @@ conda install descartes
 conda install pykakasi
 conda install pdf2image
 conda install pyperclip
-
-
-
 ```
 
 ## STEP4
@@ -130,6 +147,12 @@ FREECAD initial commit
 
 ```
 pip install mouse
+```
+
+## STEP7
+
+```
+pptx2md
 ```
 
 ## 適宜
@@ -166,5 +189,5 @@ pip install pyqt5
 ```
 
 ```
-blender_notebook install --blender-exec="$prefix\blender\blender-2.90.1-windows64\blender.exe"
+blender_notebook install --blender-exec="C:\Users\M151325\blender-2.93.4-windows-x64\blender.exe"
 ```
