@@ -162,6 +162,12 @@ conda install -c conda-forge pendulum
 conda install -c conda-forge fastapi uvicorn
 ```
 
+## STEP9
+
+```
+PyMuPDF
+```
+
 ## 適宜
 
 '''
