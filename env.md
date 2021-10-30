@@ -158,7 +158,8 @@ pptx2md
 ## STEP8
 
 ```
-pptx2md
+conda install -c conda-forge pendulum
+conda install -c conda-forge fastapi uvicorn
 ```
 
 ## 適宜
