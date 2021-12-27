@@ -168,6 +168,20 @@ conda install -c conda-forge fastapi uvicorn
 PyMuPDF
 ```
 
+## STEP10
+
+```
+conda install -c conda-forge jupytext
+```
+
+## STEP11
+
+```
+zeep
+pip install python-gantt
+pip install python-gantt-csv
+```
+
 ## 適宜
 
 '''
