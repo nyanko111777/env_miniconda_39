@@ -275,8 +275,6 @@ file_list = [[f,os.path.getsize(f) / 1000000] for f in file_list ]
 df = pd.DataFrame(file_list)
 df.columns=["path","MB"]
 
-files
-
 df_b = df[df["MB"]>99]
 df_b
 
@@ -311,7 +309,8 @@ file_list = [[f,os.path.getsize(f) / 1000000] for f in file_list ]
 df = pd.DataFrame(file_list)
 df.columns=["path","MB"]
 
-df
+df_b = df[df["MB"]>99]
+df_b
 
 # ## githubへpush(factory_env_miniconda39)
 
