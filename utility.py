@@ -104,11 +104,14 @@ if __name__ == '__main__':
 # リポジトリの中に未コミットがあれば、コミットとして0にする
 
 li = self.comfirm_file(case=1)
+li
+
 if len(li) != 0:
     self.repo_remote_folder.git.add(r"*")
-    li = self.comfirm_file(case=2)
+    li = self.comfirm_file(case=1)
+
 if len(li) != 0:
-    self.repo_fac.git.commit("-m","initial commit")
+    self.repo_remote_folder.git.commit("-m","gantt")
 
 # ## nmp
 
