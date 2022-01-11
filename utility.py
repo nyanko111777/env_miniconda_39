@@ -72,8 +72,8 @@ class env_util():
             tex = self.repo_fac.git.status("-s")
         elif case == 1:
             tex = self.repo_remote_folder.git.status("-s")
-        elif case == 2:
-            tex = self.repo_freecad.git.status("-s")
+#         elif case == 2:
+#             tex = self.repo_freecad.git.status("-s")
         return tex
 
     def comfirm_file(self,case):
@@ -103,9 +103,9 @@ if __name__ == '__main__':
 
 # リポジトリの中に未コミットがあれば、コミットとして0にする
 
-li = self.comfirm_file(case=0)
+li = self.comfirm_file(case=1)
 if len(li) != 0:
-    self.repo_fac.git.add(r"*")
+    self.repo_remote_folder.git.add(r"*")
     li = self.comfirm_file(case=2)
 if len(li) != 0:
     self.repo_fac.git.commit("-m","initial commit")
