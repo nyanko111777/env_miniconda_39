@@ -142,10 +142,9 @@ f_path
 
 # + active=""
 # pip install 
-# pip install 
 # -
 
-pkg_name = "python-gantt-csv"
+pkg_name = "anytree"
 # print(f"pip download -d {f_path} --no-binary :all: {pkg_name}")
 print(f"pip download -d {f_path} {pkg_name}")
 
