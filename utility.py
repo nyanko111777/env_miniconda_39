@@ -111,7 +111,7 @@ if len(li) != 0:
     li = self.comfirm_file(case=1)
 
 if len(li) != 0:
-    self.repo_remote_folder.git.commit("-m","gantt")
+    self.repo_remote_folder.git.commit("-m","gantt_s")
 
 # ## nmp
 
