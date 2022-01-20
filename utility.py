@@ -101,17 +101,39 @@ if __name__ == '__main__':
 
 # # おうち側作業
 
-# リポジトリの中に未コミットがあれば、コミットとして0にする
+# ## 初期化
+# 移動完了したファイルを消して、初期化します。
+#
+# ファイルが残っていると、相手側でのダウンロードが遅くなる
+
+# ### フォルダの中をきれいにする
+
+# ! start .
+
+# 未コミットを確認
 
 li = self.comfirm_file(case=1)
 li
+
+# git add
 
 if len(li) != 0:
     self.repo_remote_folder.git.add(r"*")
     li = self.comfirm_file(case=1)
 
+# git commit
+
 if len(li) != 0:
-    self.repo_remote_folder.git.commit("-m","gantt_s")
+    self.repo_remote_folder.git.commit("-m","init_seiri")
+
+# push
+
+self.repo_remote_folder.git.push()
+
+# 未コミットを確認
+
+li = self.comfirm_file(case=1)
+li
 
 # ## nmp
 
@@ -134,14 +156,16 @@ f_path
 # ## pip
 
 import os
-
 os.environ["userprofile"]
-
 f_path = os.path.join(os.environ["userprofile"],"000_work","env_miniconda_39","pip_pkgs")
 f_path
 
+
+
+
+
 # + active=""
-# pip install 
+# pipで依存関係も含めてダウンロード
 # -
 
 pkg_name = "anytree"
@@ -154,7 +178,7 @@ print(f"pip download -d {f_path} {pkg_name}")
 
 # ## 初期化
 
-# ### freecad
+# ## freecad
 
 # ファイルをコピー
 
@@ -200,7 +224,11 @@ if len(df_b)!=0:
         df_a.to_csv(os.path.join("sep_file_list_freecad/",os.path.basename(target)+".csv"),index=False)
         os.remove(target)
 
-# ### env_miniconda_39
+
+
+
+
+# ## conda
 
 # pkgsとsep_file_listの中のファイルを削除
 
@@ -211,20 +239,22 @@ os.mkdir(os.path.join(self.remote_folder_path,"sep_file_list"))
 
 # ### factory_env_miniconda39
 
-# 未コミットはコミットしておく
+# factory_env_miniconda39の未コミットはコミットしておく
 
 li = self.comfirm_file(case=0)
 
 # 未コミットがあれば、コミットとして0にする
 
 # +
-if len(li) != 0:
+if li[0] != "":
     self.repo_fac.git.add(r"*")
     li = self.comfirm_file(case=0)
 
-if len(li) != 0:
+if li[0] != "":
     self.repo_fac.git.commit("-m","initial commit")
 # -
+
+# conda install でパッケージをインストール
 
 # ## miniconda→factory_env_miniconda39にコピー
 # 同じ状態にします
