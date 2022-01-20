@@ -328,7 +328,7 @@ if len(li_m) != 0:
 li_mi
 
 if len(li_mi) != 0:
-    self.repo_remote_folder.git.commit("-m","zeep")
+    self.repo_remote_folder.git.commit("-m","anytree")
 
 # push
 
