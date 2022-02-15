@@ -2,6 +2,11 @@
 
 `/miniconda3/pkgs`の中身を追いかけて、環境のコピーを作成する
 
+## memo
+- https://github.com/microsoft/PowerToys
+- https://github.com/veler/DevToys
+- https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode
+
 ## utility
 
 ## git init
@@ -187,6 +192,16 @@ pip install python-gantt-csv
 ```
 conda install -c conda-forge html5lib
 ```
+
+## STEP13
+
+```
+pip install mysqlclient
+conda install -c conda-forge sqlalchemy
+conda install -c conda-forge pymysql
+
+```
+
 
 ## 適宜
 

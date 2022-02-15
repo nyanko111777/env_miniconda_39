@@ -160,15 +160,13 @@ os.environ["userprofile"]
 f_path = os.path.join(os.environ["userprofile"],"000_work","env_miniconda_39","pip_pkgs")
 f_path
 
-
-
-
+os.startfile(f_path)
 
 # + active=""
 # pipで依存関係も含めてダウンロード
 # -
 
-pkg_name = "anytree"
+pkg_name = "mysqlclient"
 # print(f"pip download -d {f_path} --no-binary :all: {pkg_name}")
 print(f"pip download -d {f_path} {pkg_name}")
 
@@ -318,31 +316,6 @@ if len(df_b)!=0:
         os.remove(target)
 
 # ! start .
-
-# ## react
-
-# +
-import os
-import pandas as pd
-
-dir_path = r"C:\Users\M151325\000_work\env_miniconda_39\react"
-file_list=[]
-for (root, directories, files) in os.walk(dir_path):
-#     for d in directories:
-#         d_path = os.path.join(root, d)
-#         print(d_path)
-    for file in files:
-        file_path = os.path.join(root, file)
-#         print(file_path)
-        file_list.append(file_path)
-# -
-
-file_list = [[f,os.path.getsize(f) / 1000000] for f in file_list ]
-df = pd.DataFrame(file_list)
-df.columns=["path","MB"]
-
-df_b = df[df["MB"]>99]
-df_b
 
 # ## githubへpush(factory_env_miniconda39)
 
