@@ -166,7 +166,7 @@ os.startfile(f_path)
 # pipで依存関係も含めてダウンロード
 # -
 
-pkg_name = "mysqlclient"
+pkg_name = "pikepdf"
 # print(f"pip download -d {f_path} --no-binary :all: {pkg_name}")
 print(f"pip download -d {f_path} {pkg_name}")
 
@@ -370,5 +370,12 @@ for file in file_list:
 # - pip の場合
 #   `for /f %i in ('dir /A-d /B *') do pip install %i`
 #
+
+# # test
+
+import pikepdf
+import itertools
+
+import PyPDF2
 
 

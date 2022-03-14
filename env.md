@@ -202,6 +202,13 @@ conda install -c conda-forge pymysql
 
 ```
 
+## STEP14
+
+```
+conda install -c conda-forge cufflinks-py 
+pip install pikepdf
+```
+
 
 ## 適宜
 
