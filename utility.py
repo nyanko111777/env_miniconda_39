@@ -252,6 +252,8 @@ if li[0] != "":
     self.repo_fac.git.commit("-m","initial commit")
 # -
 
+# !start .
+
 # conda install でパッケージをインストール
 
 # ## miniconda→factory_env_miniconda39にコピー
@@ -372,10 +374,5 @@ for file in file_list:
 #
 
 # # test
-
-import pikepdf
-import itertools
-
-import PyPDF2
 
 

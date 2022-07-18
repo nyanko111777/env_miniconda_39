@@ -209,6 +209,11 @@ conda install -c conda-forge cufflinks-py
 pip install pikepdf
 ```
 
+## STEP5
+
+```
+conda install qgrid
+```
 
 ## 適宜
 
