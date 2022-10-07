@@ -166,7 +166,7 @@ os.startfile(f_path)
 # pipで依存関係も含めてダウンロード
 # -
 
-pkg_name = "pikepdf"
+pkg_name = "pytest"
 # print(f"pip download -d {f_path} --no-binary :all: {pkg_name}")
 print(f"pip download -d {f_path} {pkg_name}")
 
