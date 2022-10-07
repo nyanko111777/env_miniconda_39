@@ -166,7 +166,7 @@ os.startfile(f_path)
 # pipで依存関係も含めてダウンロード
 # -
 
-pkg_name = "pytest"
+pkg_name = "justpy"
 # print(f"pip download -d {f_path} --no-binary :all: {pkg_name}")
 print(f"pip download -d {f_path} {pkg_name}")
 
@@ -333,7 +333,7 @@ if len(li_m) != 0:
 li_mi
 
 if len(li_mi) != 0:
-    self.repo_remote_folder.git.commit("-m","anytree")
+    self.repo_remote_folder.git.commit("-m","pytest_nicegui")
 
 # push
 
