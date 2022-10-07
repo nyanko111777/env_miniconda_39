@@ -339,6 +339,8 @@ if len(li_mi) != 0:
 
 self.repo_remote_folder.git.push()
 
+# ! code .
+
 # # 相手側作業
 
 # リポジトリをダウンロードして、000_workの下に移動する
