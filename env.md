@@ -215,6 +215,14 @@ pip install pikepdf
 conda install qgrid
 ```
 
+## STEP5
+
+```
+conda install -c conda-forge mkdocs
+conda install -c conda-forge mkdocs-material
+conda install -c conda-forge python-markdown-math
+```
+
 ## 適宜
 
 '''
