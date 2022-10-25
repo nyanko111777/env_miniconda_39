@@ -223,6 +223,14 @@ conda install -c conda-forge mkdocs-material
 conda install -c conda-forge python-markdown-math
 ```
 
+```
+pip install fontawesome_markdown
+pip install mkdocs-localsearch
+pip install mdx_unimoji
+
+pip install pymdown-extensions
+```
+
 ## 適宜
 
 '''
