@@ -166,7 +166,7 @@ os.startfile(f_path)
 # pipで依存関係も含めてダウンロード
 # -
 
-pkg_name = "mdx_unimoji"
+pkg_name = "reliability"
 # print(f"pip download -d {f_path} --no-binary :all: {pkg_name}")
 print(f"pip download -d {f_path} {pkg_name}")
 
